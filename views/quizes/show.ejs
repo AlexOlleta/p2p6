@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8" />
+    <title>Cultura General</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Cuestionario de Cultura General</h1>
+
+    <p>Responda a las siguientes preguntas:</p>
+
+    <form method="get" action="/quizes/<%= quiz.Id %>/answer">
+	<b> Pregunta: </b> <%= pregunta %> <br>
+	<input type="hidden" name="id" value="1"/>
+	<input type="text" name="p1" value="Responda aquí"/> <br>
+	<input type="submit" value="Comprobar" />
+	</form>
+  </body>
+</html>
